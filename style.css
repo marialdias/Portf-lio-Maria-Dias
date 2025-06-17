@@ -1,0 +1,114 @@
+/* Estilo geral da página */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #a64cf4;
+  font-size: 2.5em;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #a64cf4;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+/* Foto redonda com animação */
+.foto-central {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  animation: descer 1s ease-out;
+}
+
+.foto-central img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #a64cf4;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(166, 76, 244, 0.5);
+}
+
+@keyframes descer {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Galeria de projetos */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.projeto {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+  background-color: #2d2d2d;
+}
+
+/* Links */
+a {
+  color: #a64cf4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  font-size: 0.9em;
+  color: #888;
+}
